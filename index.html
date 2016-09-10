@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blyndfold.me</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/logo-nav.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: black !important;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 2em;">
+        <div class="row">
+            <div class="col-lg-8" style="padding-left:20em;">
+            	<form method="post" action="" class="formcss">
+            		<div class="textcss">Enter a Type of Food:</div>
+	        		<input type="text" class="searchBar" name="search" size="21" placeholder="Search..." maxlength="120">
+				</form>
+				<form method="post" action="" class="formcss">
+            		<div class="textcss">Cost:</div>
+	        		<input type="text" class="costBar" name="Cost" size="21" placeholder="Cost..." maxlength="120">
+				</form>
+				<form method="post" action="" class="formcss">
+            		<div class="textcss">Distance:</div>
+	        		<input type="text" class="distanceBar" name="Distance" size="21" placeholder="Distance..." maxlength="120">
+				</form>
+				<button class="button">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
