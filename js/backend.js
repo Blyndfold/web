@@ -9,18 +9,16 @@ var errorFunc = function errorFunc(err) {
   console.log(err);
 };
 
+
 var sendData = function sendData() {
 
   console.log("Send");
+  var data = $('form').serialize();
+  console.log("form passed", data);
 
   $.ajax({ 
     type: "GET",
-    url: 'http://blyndfoldme.herokuapp.com/api/random',
-    data: {
-      term: "tacos",
-      price: "cheap",
-      distance: "5"
-    },
+    url: 'http://blyndfoldme.herokuapp.com/api/random?' + data,
     contentType: "application/json; charset=utf-8",
     dataType: "json",
     success: successFunc,

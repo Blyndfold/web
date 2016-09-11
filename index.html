@@ -49,29 +49,29 @@
         <div class="col-sm-4" id="form-tab">
           <form id="food" action="" class="formcss">
             <div class="textcss">Enter a Type of Food:</div>
-            <input type="text" class="searchBar" name="search" size="21" placeholder="Search..." maxlength="120">
+            <input type="text" class="searchBar" name="term" size="21" placeholder="Search..." maxlength="120" id="term">
 
             <div class="textcss">Cost:</div>
             <ul>
               <li>
-                <input type="radio" id="f-option" name="selector">
+                <input type="radio" id="f-option" name="cost">
                 <label for="f-option">Inexpensive</label>
                 <div class="check"></div>
               </li>
               <li>
-                <input type="radio" id="s-option" name="selector">
+                <input type="radio" id="s-option" name="cost">
                 <label for="s-option">Moderate</label>
                 <div class="check"><div class="inside"></div></div>
               </li>
               <li>
-                <input type="radio" id="t-option" name="selector">
+                <input type="radio" id="t-option" name="cost">
                 <label for="t-option">Expensive</label>
                 <div class="check"><div class="inside"></div></div>
               </li>
             </ul>
 
             <div class="textcss">Distance:</div>
-            <input type="text" class="distanceBar" name="Distance" size="21" placeholder="Distance in miles" maxlength="120">
+            <input type="text" class="distanceBar" name="distance" size="21" placeholder="Distance in miles" maxlength="120" id="dist">
           </form>
           <button class="button" onclick="sendData()">Submit</button>
         </div>
