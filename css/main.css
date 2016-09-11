@@ -199,6 +199,11 @@ input[type=text]:focus {
     cursor: pointer;
     background-color: #008CBA;
     width: 40%;
+    border-radius:5px;
+}
+
+.button:hover { 
+    background-color: grey;
 }
 
 .textcss{
