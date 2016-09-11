@@ -1,3 +1,151 @@
+@import url('http://fonts.googleapis.com/css?family=Lato');
+
+body, html{
+	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	color: #AAAAAA;
+	font-weight: normal;
+}
+
+#contain ul{
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+#contain ul li{
+  color: #AAAAAA;
+  display: block;
+  position: relative;
+}
+
+#contain ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+#contain ul li label{
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.35em;
+  padding: 25px 25px 25px 80px;
+  margin: 10px auto;
+  height: 30px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+#contain ul li:hover label{
+	color: black;
+}
+
+#contain ul li .check{
+  display: block;
+  position: absolute;
+  border: 5px solid #AAAAAA;
+  border-radius: 100%;
+  height: 26px;
+  width: 26px;
+  top: 25px;
+  left: 20px;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+
+#contain ul li:hover .check {
+  border: 5px solid black;
+}
+
+#contain ul li .check::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  top: 0px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  margin: auto;  
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
+#contain input[type=radio]:checked ~ .check {
+  border: 5px solid #0DFF92;
+}
+
+#contain input[type=radio]:checked ~ .check::before{
+  background: #0DFF92;
+}
+
+#contain input[type=radio]:checked ~ label{
+  color: #0DFF92;
+}
+
+.signature {
+	position: fixed;
+	margin: auto;
+	bottom: 0;
+	top: auto;
+	width: 100%;
+}
+
+.signature p{
+	text-align: center;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 0.85em;
+	color: #AAAAAA;
+}
+
+.signature .much-heart{
+	display: inline-block;
+	position: relative;
+	margin: 0 4px;
+	height: 10px;
+	width: 10px;
+	background: #AC1D3F;
+	border-radius: 4px;
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.signature .much-heart::before, 
+.signature .much-heart::after {
+	  display: block;
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #AC1D3F;
+  top: -4px;
+}
+
+.signature .much-heart::after {
+	bottom: 0;
+	top: auto;
+	left: -4px;
+}
+
+.signature a {
+	color: #AAAAAA;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
 .searchBar[type=text] {
     width: 12em;
     box-sizing: border-box;
@@ -14,18 +162,6 @@
     transition: width 0.4s ease-in-out;
 }
 
-.costBar[type=text]{
-    width: 12em;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-
 .distanceBar[type=text]{
     width: 12em;
     box-sizing: border-box;
@@ -33,6 +169,10 @@
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
+    background-image: url('../images/distance.png');
+    background-position: 0px 3px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
