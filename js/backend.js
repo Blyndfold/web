@@ -14,8 +14,17 @@ var sendData = function sendData() {
 
   console.log("Send");
   var data = $('form').serialize();
+  var costvalue = $(".cost:checked").val();
+  
+  if (costvalue == 1) { 
+    console.log(" It's Inexpensive");
+  } else if (costvalue == 3) {
+    console.log(" It's Expensive");
+  } else {
+    console.log(" It's Moderate");  
+  }
   console.log("form passed", data);
-
+  
   $.ajax({ 
     type: "GET",
     url: 'http://blyndfoldme.herokuapp.com/api/random?' + data,

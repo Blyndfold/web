@@ -14,6 +14,8 @@ Integrated with:
 - [ ] Lyft
 - [ ] TripAdvisor
 
+--Add Corus addon for trouble shooting purposes on your local
+
 # [Start Bootstrap](http://startbootstrap.com/) - [Logo Nav](http://startbootstrap.com/template-overviews/logo-nav/)
 
 [Logo Nav](http://startbootstrap.com/template-overviews/logo-nav/) is a navigation bar template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template replaces the default navbar brand text with an image.
