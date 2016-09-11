@@ -212,3 +212,9 @@ input[type=text]:focus {
  font-variant: small-caps;
  font-family: calibri;
 }
+
+.lyft-img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
