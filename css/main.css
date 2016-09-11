@@ -160,6 +160,7 @@ h2 {
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
+    margin-bottom:1em;
 }
 
 .distanceBar[type=text]{
@@ -172,6 +173,23 @@ h2 {
     background-image: url('../images/distance.png');
     background-position: 0px 3px;
     background-size: 40px 40px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-bottom:1em;
+}
+
+.phoneBar[type=text]{
+    width: 12em;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/phone.png');
+    background-position: 5px 8px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
@@ -214,7 +232,7 @@ input[type=text]:focus {
 }
 
 .lyft-img {
-  height: 64px;
-  width: 64px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
 }

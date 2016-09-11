@@ -12,6 +12,10 @@ var errorFunc = function errorFunc(err) {
 
 var sendData = function sendData() {
 
+  $('.lyft-info').find('p:first').remove();
+  $('.lyft-info').find('img:first').remove();
+  $('#place-tab').find('h2:first').remove();
+
   console.log("Send");
   var data = $('form').serialize();
   var costvalue = $(".cost:checked").val();
@@ -38,7 +42,7 @@ var sendData = function sendData() {
 var addLyftInfo = function addLyftInfo(data) {
 
   var imgEl = '<img class="lyft-img" src="' + data.img + '">';
-  var nameEl = '<p class="lead">'+data.name+'</p>';
+  var nameEl = '<p class="lead" style="line-height: 3em;float: right;">'+data.name+'</p>';
 
   $('.lyft-filler-text').hide();
   $('.lyft-info').hide();
@@ -51,8 +55,7 @@ var addLyftInfo = function addLyftInfo(data) {
 
 var addPlaceData = function addPlaceData(data) {
 
-  var nameEl = '<h4>'+data.name+'</h4>';
-  // var mapEl = ''
+  var nameEl = '<h2 style="color:black;">'+data.name+'</h2>';
 
   $('#place-tab').append(nameEl);
 
