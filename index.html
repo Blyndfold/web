@@ -10,6 +10,26 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/logo-nav.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+		function myFunction() {
+   			window.location.replace("Etapage.html");
+		}
+		function fetch(){
+			$.ajax({ 
+        type: "GET",
+        url: 'http://blyndfoldme.herokuapp.com/api/random',
+        data: {term:"tacos",
+        	   price:"cheap",
+        	   distance:"5"},
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: successFunc,
+        error: errorFunc
+    	});
+		}
+	</script>
 </head>
 
 <body>
@@ -22,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="images/logo.png" alt="">
                 </a>
             </div>
@@ -42,22 +62,40 @@
         </div>
     </nav>
 
-    <div class="container" style="padding-top: 2em;">
+    <div class="container" id="contain" style="padding-top: 2em;">
         <div class="row">
             <div class="col-lg-8" style="padding-left:20em;">
             	<form method="post" action="" class="formcss">
             		<div class="textcss">Enter a Type of Food:</div>
 	        		<input type="text" class="searchBar" name="search" size="21" placeholder="Search..." maxlength="120">
 				</form>
+
 				<form method="post" action="" class="formcss">
             		<div class="textcss">Cost:</div>
-	        		<input type="text" class="costBar" name="Cost" size="21" placeholder="Cost..." maxlength="120">
+	        		<ul>
+  						<li>
+    						<input type="radio" id="f-option" name="selector">
+    						<label for="f-option">Inexpensive</label>
+    						<div class="check"></div>
+  						</li>
+  						<li>
+    						<input type="radio" id="s-option" name="selector">
+    						<label for="s-option">Moderate</label>
+    						<div class="check"><div class="inside"></div></div>
+  						</li>
+  						<li>
+    						<input type="radio" id="t-option" name="selector">
+    						<label for="t-option">Expensive</label>
+    						<div class="check"><div class="inside"></div></div>
+  						</li>
+					</ul>
 				</form>
-				<form method="post" action="" class="formcss">
+
+				<form method="post" action="" class="formcss input1" >
             		<div class="textcss">Distance:</div>
-	        		<input type="text" class="distanceBar" name="Distance" size="21" placeholder="Distance..." maxlength="120">
+	        		<input type="text" class="distanceBar" name="Distance" size="21" placeholder="Distance in miles" maxlength="120">
 				</form>
-				<button class="button">Submit</button>
+				<button class="button" onclick="myFunction()">Submit</button>
             </div>
         </div>
     </div>
