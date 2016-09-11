@@ -52,19 +52,19 @@
             <input type="text" class="searchBar" name="term" size="21" placeholder="Search..." maxlength="120" id="term">
 
             <div class="textcss">Cost:</div>
-            <ul>
+            <ul style="margin-bottom: 1em;">
               <li>
-                <input type="radio" id="f-option" name="cost">
+                <input type="radio" id="f-option" class="cost" name="cost" value="1">
                 <label for="f-option">Inexpensive</label>
                 <div class="check"></div>
               </li>
               <li>
-                <input type="radio" id="s-option" name="cost">
+                <input type="radio" class="cost" id="s-option" name="cost" value="2">
                 <label for="s-option">Moderate</label>
                 <div class="check"><div class="inside"></div></div>
               </li>
               <li>
-                <input type="radio" id="t-option" name="cost">
+                <input type="radio" class="cost" id="t-option" name="cost" value="3">
                 <label for="t-option">Expensive</label>
                 <div class="check"><div class="inside"></div></div>
               </li>
@@ -72,6 +72,8 @@
 
             <div class="textcss">Distance:</div>
             <input type="text" class="distanceBar" name="distance" size="21" placeholder="Distance in miles" maxlength="120" id="dist">
+            <div class="textcss">Phone Number:</div>
+            <input type="text" class="phoneBar" name="phone" size="21" placeholder="Phone Number" maxlength="120" id="phone">
           </form>
           <button class="button" onclick="sendData()">Submit</button>
         </div>
@@ -80,18 +82,14 @@
             <div class="panel-heading">
               <h3 class="panel-title">Lyft</h3>
             </div>
-            <div class="panel-body">
+            <div class="panel-body" style="padding: 10px;">
               <p class="lyft-filler-text">Your Lyft driver info will appear here!</p>
-
               <div class="lyft-info">
-
               </div>
-
             </div>
           </div>
         </div>
         <div class="col-sm-4" id="place-tab">
-          
         </div>
       </div>
     </div>
