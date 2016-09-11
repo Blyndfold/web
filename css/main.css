@@ -199,6 +199,11 @@ input[type=text]:focus {
     cursor: pointer;
     background-color: #008CBA;
     width: 40%;
+    border-radius:5px;
+}
+
+.button:hover { 
+    background-color: grey;
 }
 
 .textcss{
@@ -206,4 +211,10 @@ input[type=text]:focus {
  font-style: normal;
  font-variant: small-caps;
  font-family: calibri;
+}
+
+.lyft-img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
 }
